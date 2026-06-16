@@ -9,10 +9,11 @@ public class Main {
     private final static PetMachine petMachine = new PetMachine();
 
     static void main(String[] args) {
+        scanner.useDelimiter("\\n");
         var option = -1;
 
         do {
-            System.out.println("Escolha uma das opções");
+            System.out.println("=== Escolha uma das opções ===");
             System.out.println("1 - Dar banho no pet");
             System.out.println("2 - Abastecer a máquina com água");
             System.out.println("3 - Abastecer a máguina com shampoo");
@@ -23,14 +24,39 @@ public class Main {
             System.out.println("8 - Retirar pet da máquina");
             System.out.println("9 - Limpar a máquina");
             System.out.println("0 - Sair");
+            System.out.println("==============================");
             option = scanner.nextInt();
 
             switch (option){
+                case 1 -> petMachine.takeAShower();
+                case 2 -> petMachine.addWater();
+                case 3 -> petMachine.addShampoo();
+                case 4 -> verifyWater();
+                case 5 -> verifyShampoo();
+                case 6 -> checkIfHasPetInMachine();
                 case 7 -> setPetInPetMachine();
-
+                case 8 -> petMachine.removePet();
+                case 9 -> petMachine.cleanMachine();
+                case 0 -> System.exit(0);
+                default -> System.out.println("Opção inválida");
             }
         } while (option != 0);
 
+    }
+
+    private static void verifyWater() {
+        var amount = petMachine.getWater();
+        System.out.println("A máquina está com " + amount + " litro(s) de água.");
+    }
+
+    private static void verifyShampoo() {
+        var amount = petMachine.getShampoo();
+        System.out.println("A máquina está com " + amount + " litro(s) de shampoo.");
+    }
+
+    private static void checkIfHasPetInMachine() {
+        var hasPet = petMachine.hasPet();
+        System.out.println(hasPet ? "Há um pet na máquina." : "Não há um pet na máquina.");
     }
 
     public static void setPetInPetMachine(){
@@ -41,6 +67,6 @@ public class Main {
         }
         var pet = new Pet(name);
         petMachine.setPet(pet);
-        System.out.println("O pet " + pet.getName() + "foi colocado na máquina");
     }
+
 }
