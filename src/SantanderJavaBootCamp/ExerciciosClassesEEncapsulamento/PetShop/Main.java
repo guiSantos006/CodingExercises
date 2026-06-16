@@ -16,7 +16,7 @@ public class Main {
             System.out.println("=== Escolha uma das opções ===");
             System.out.println("1 - Dar banho no pet");
             System.out.println("2 - Abastecer a máquina com água");
-            System.out.println("3 - Abastecer a máguina com shampoo");
+            System.out.println("3 - Abastecer a máquina com shampoo");
             System.out.println("4 - Verificar água da máquina");
             System.out.println("5 - Verificar shampoo da máquina");
             System.out.println("6 - Verificar se tem pet no banho");
