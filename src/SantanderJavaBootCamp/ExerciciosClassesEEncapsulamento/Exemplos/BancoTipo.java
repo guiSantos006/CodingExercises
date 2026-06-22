@@ -1,4 +1,4 @@
-package SantanderJavaBootCamp;
+package SantanderJavaBootCamp.ExerciciosClassesEEncapsulamento.Exemplos;
 
 import java.util.Scanner;
 
