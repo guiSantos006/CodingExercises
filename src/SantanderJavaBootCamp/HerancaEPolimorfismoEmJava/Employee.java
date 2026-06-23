@@ -1,6 +1,6 @@
-package SantanderJavaBootCamp.HerançaEPolimorfismoEmJava;
+package SantanderJavaBootCamp.HerancaEPolimorfismoEmJava;
 
-public sealed abstract class Employee permits Manager, Salesman {
+public class Employee{
     protected String code;
     protected String name;
     protected String address;
@@ -65,5 +65,4 @@ public sealed abstract class Employee permits Manager, Salesman {
         this.age = age;
     }
 
-    public abstract double getFullSalary();
 }

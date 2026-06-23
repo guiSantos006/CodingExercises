@@ -1,6 +1,6 @@
-package SantanderJavaBootCamp.HerançaEPolimorfismoEmJava;
+package SantanderJavaBootCamp.HerancaEPolimorfismoEmJava;
 
-public non-sealed class Manager extends Employee {
+public class Manager extends Employee {
 
     private String login;
     private String password;
@@ -51,7 +51,6 @@ public non-sealed class Manager extends Employee {
         this.commission = commission;
     }
 
-    @Override
     public double getFullSalary() {
         return this.salary + this.commission;
     }

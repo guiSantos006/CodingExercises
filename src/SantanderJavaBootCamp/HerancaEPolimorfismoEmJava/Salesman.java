@@ -1,6 +1,6 @@
-package SantanderJavaBootCamp.HerançaEPolimorfismoEmJava;
+package SantanderJavaBootCamp.HerancaEPolimorfismoEmJava;
 
-public non-sealed class Salesman extends Employee {
+public class Salesman extends Employee {
 
     private double percentPerSold;
 
@@ -26,7 +26,6 @@ public non-sealed class Salesman extends Employee {
         return "SL" + super.getCode();
     }
 
-    @Override
     public double getFullSalary(){
         return this.salary + (soldAmount * percentPerSold/100);
     }
