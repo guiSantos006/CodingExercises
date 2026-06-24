@@ -1,4 +1,4 @@
-package SantanderJavaBootCamp.HerancaEPolimorfismoEmJava;
+package SantanderJavaBootCamp.HerancaEPolimorfismoEmJava.Exemplos;
 
 public class Manager extends Employee {
 
