@@ -1,4 +1,4 @@
-package SantanderJavaBootCamp.InterfacesELambdaEmJava;
+package SantanderJavaBootCamp.InterfacesELambdaEmJava.Interfaces;
 
 public class MusicBox implements MusicPlayer {
 

@@ -1,4 +1,4 @@
-package SantanderJavaBootCamp.InterfacesELambdaEmJava;
+package SantanderJavaBootCamp.InterfacesELambdaEmJava.Interfaces;
 
 public class Computer implements VideoPlayer, MusicPlayer {
 
