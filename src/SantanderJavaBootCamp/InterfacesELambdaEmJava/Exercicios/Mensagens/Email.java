@@ -1,9 +1,9 @@
 package SantanderJavaBootCamp.InterfacesELambdaEmJava.Exercicios.Mensagens;
 
-public record Email(String message) implements Marketing  {
+public record Email() implements MarketingMessage {
 
     @Override
-    public String sendMessage() {
-        return "Olá, tudo bem? Esta mensagem foi enviado por email.";
+    public String sendMessage(String message) {
+        return "Enviando por e-mail: " + message;
     }
 }

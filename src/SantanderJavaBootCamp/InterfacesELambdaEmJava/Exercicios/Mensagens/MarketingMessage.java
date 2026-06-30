@@ -1,7 +1,7 @@
 package SantanderJavaBootCamp.InterfacesELambdaEmJava.Exercicios.Mensagens;
 
-public interface Marketing {
+public interface MarketingMessage {
 
-    String sendMessage();
+    String sendMessage(String message);
 
 }

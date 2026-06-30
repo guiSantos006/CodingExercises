@@ -1,8 +1,8 @@
 package SantanderJavaBootCamp.InterfacesELambdaEmJava.Exercicios.Mensagens;
 
-public record SocialMedia(String message) implements Marketing  {
+public record SocialMedia() implements MarketingMessage {
     @Override
-    public String sendMessage() {
-        return "Olá, tudo bem? Esta mensagem foi enviada por uma rede social.";
+    public String sendMessage(String message) {
+        return "Enviando para as redes sociais: " + message;
     }
 }

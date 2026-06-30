@@ -1,8 +1,9 @@
 package SantanderJavaBootCamp.InterfacesELambdaEmJava.Exercicios.Mensagens;
 
-public record SMS(String message) implements Marketing {
+public record SMS() implements MarketingMessage {
+
     @Override
-    public String sendMessage() {
-        return "Olá, tudo bem? Esta mensagem foi enviada por SMS.";
+    public String sendMessage(String message) {
+        return "Enviando por SMS: " + message;
     }
 }
