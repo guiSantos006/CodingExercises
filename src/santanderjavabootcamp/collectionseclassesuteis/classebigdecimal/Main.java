@@ -21,7 +21,6 @@ public class Main {
         System.out.println(new BigDecimal("2.00").subtract(new BigDecimal("1.9")));
 
         var value3 = new BigDecimal("0.1");
-        var value4 = new BigDecimal("0.2");
-        System.out.println(value1.sqrt(new MathContext(3, RoundingMode.HALF_EVEN)));
+        System.out.println(value3.sqrt(new MathContext(3, RoundingMode.HALF_EVEN)));
     }
 }
