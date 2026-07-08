@@ -1,4 +1,4 @@
-package santanderjavabootcamp.collectionseclassesuteis.classeenum.enumeration;
+package santanderjavabootcamp.collectionseclassesuteis.enums.enumeration;
 
 import java.util.function.BiFunction;
 

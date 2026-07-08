@@ -1,6 +1,6 @@
-package santanderjavabootcamp.collectionseclassesuteis.classeenum;
+package santanderjavabootcamp.collectionseclassesuteis.enums;
 
-import santanderjavabootcamp.collectionseclassesuteis.classeenum.enumeration.OperationEnum;
+import santanderjavabootcamp.collectionseclassesuteis.enums.enumeration.OperationEnum;
 
 import java.util.Scanner;
 
