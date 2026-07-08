@@ -1,1 +1,1 @@
-This is a repository that i'm using to do my study courses and complete coding challenges.
+This repository contains the code I write while studying through courses and solving programming challenges. It serves as a personal learning archive where I practice new concepts, improve my problem-solving skills, and track my progress over time.
