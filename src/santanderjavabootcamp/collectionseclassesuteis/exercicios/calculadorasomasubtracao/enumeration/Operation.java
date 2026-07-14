@@ -1,24 +1,25 @@
 package santanderjavabootcamp.collectionseclassesuteis.exercicios.calculadorasomasubtracao.enumeration;
 
-import java.util.function.BiFunction;
+import java.util.stream.LongStream;
 
 public enum Operation {
 
-    SUM((Integer v1, Integer v2) -> v1 + v2, "+"),
+    SUM(n -> LongStream.of(n).reduce(0, Long::sum), "+"),
 
-    SUBTRACTION((Integer v1, Integer v2) -> v1 - v2, "-");
+    SUBTRACTION(n -> LongStream.of(n).reduce(0, (n1 , n2) -> n1 - n2), "-");
+
+
+    private final Calc operationCallBack;
 
     private final String symbol;
 
-    private final BiFunction<Integer, Integer, Integer> calculate;
-
-    Operation(BiFunction<Integer, Integer, Integer> calculate, String symbol) {
+    Operation(Calc operationCallBack, String symbol) {
+        this.operationCallBack = operationCallBack;
         this.symbol = symbol;
-        this.calculate = calculate;
     }
 
-    public BiFunction<Integer, Integer, Integer> getCalculate() {
-        return calculate;
+    public Calc getOperationCallBack() {
+        return operationCallBack;
     }
 
     public String getSymbol() {
