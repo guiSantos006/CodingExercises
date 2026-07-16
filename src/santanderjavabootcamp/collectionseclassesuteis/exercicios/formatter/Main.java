@@ -20,6 +20,7 @@ public class Main {
                 break;
             }
             Field parsedField = parseField(input);
+            // Adiciona o Objeto na List Fields
             fields.add(parsedField);
         }
 
@@ -29,6 +30,8 @@ public class Main {
         System.out.println("============================");
         System.out.println(YAMLGenerator.generate(fields));
     }
+
+    // Transforma a String em um Objeto
 
     private static Field parseField(String input){
         String[] splitInput = input.split(";");
