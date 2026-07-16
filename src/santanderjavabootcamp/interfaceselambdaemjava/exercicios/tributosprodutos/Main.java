@@ -1,4 +1,4 @@
-package santanderjavabootcamp.interfaceselambdaemjava.exercicios.TributosProdutos;
+package santanderjavabootcamp.interfaceselambdaemjava.exercicios.tributosprodutos;
 
 import java.util.Locale;
 import java.util.Scanner;

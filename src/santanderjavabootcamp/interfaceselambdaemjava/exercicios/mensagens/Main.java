@@ -1,4 +1,4 @@
-package santanderjavabootcamp.interfaceselambdaemjava.exercicios.Mensagens;
+package santanderjavabootcamp.interfaceselambdaemjava.exercicios.mensagens;
 
 import java.util.Scanner;
 

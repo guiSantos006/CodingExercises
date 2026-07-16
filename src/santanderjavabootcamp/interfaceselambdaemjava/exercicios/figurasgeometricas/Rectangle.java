@@ -1,4 +1,4 @@
-package santanderjavabootcamp.interfaceselambdaemjava.exercicios.FigurasGeometricas;
+package santanderjavabootcamp.interfaceselambdaemjava.exercicios.figurasgeometricas;
 
 public record Rectangle(double height, double base) implements GeometricForm {
 

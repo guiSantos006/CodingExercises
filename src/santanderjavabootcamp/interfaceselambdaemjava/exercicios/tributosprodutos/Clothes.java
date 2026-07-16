@@ -1,4 +1,4 @@
-package santanderjavabootcamp.interfaceselambdaemjava.exercicios.TributosProdutos;
+package santanderjavabootcamp.interfaceselambdaemjava.exercicios.tributosprodutos;
 
 public record Clothes(double price) implements Product {
 

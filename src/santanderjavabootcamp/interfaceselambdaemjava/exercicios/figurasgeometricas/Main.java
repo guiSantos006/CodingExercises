@@ -1,4 +1,4 @@
-package santanderjavabootcamp.interfaceselambdaemjava.exercicios.FigurasGeometricas;
+package santanderjavabootcamp.interfaceselambdaemjava.exercicios.figurasgeometricas;
 
 import java.util.Scanner;
 
