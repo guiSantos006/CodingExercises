@@ -1,4 +1,4 @@
-package leetcodechallenges.arraystring;
+package leetcodechallenges.arraystring.reversevowelsofastring;
 
 import java.util.Stack;
 

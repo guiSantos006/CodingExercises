@@ -1,4 +1,4 @@
-package leetcodechallenges.arraystring;
+package leetcodechallenges.arraystring.reversevowelsofastring;
 
 public class Main {
     static void main() {
